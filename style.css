@@ -1,17 +1,99 @@
-body {
-    background-color: rgba(247, 247, 247, 1);
-    font-family: 'Gotham Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 1.4em;
-    line-height: 1.5em;
-    text-align: left;
-    color: rgba(46, 46, 46, 1);
-    margin: 0 auto;
-    max-width: 345px;
-    padding: 0% 10% 0% 10%;
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
 }
 
-h1 {
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+.blinking-cursor {
+  font-size: 1em;
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-bottom: -10px;
+  color: #2e2e2e;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+  
+  }
+
+  h1 {
     font-weight: 700;
     font-size: 3.55em;
     margin-top: 15%;
@@ -108,9 +190,7 @@ animation: 1s blink step-end infinite;
   from, to {
     color: transparent;
   }
-  50% {
-    color: #2e2e2e;
-  }
+  50% {color: #2e2e2e;}
 }
 
 
