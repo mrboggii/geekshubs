@@ -3,7 +3,7 @@ body {
     font-family: 'Gotham Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.4em;
-    line-height: 1.4em;
+    line-height: 1.5em;
     text-align: left;
     color: rgba(46, 46, 46, 1);
     margin: 0 auto;
@@ -16,6 +16,7 @@ h1 {
     font-size: 3.55em;
     margin-top: 15%;
     margin-bottom: 8%;
+    line-height: 1.0em;
 }
 
 h2 {
